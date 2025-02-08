@@ -1,6 +1,13 @@
 /* ここから記載 */
 * {
   box-sizing: border-box;
+
+  .josefin-sans-<uniquifier> {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
 }
 
 h2 {
@@ -15,7 +22,6 @@ h3 {
 
 body {
   margin: 0 auto;
-  font-family: "Josefin Sans", serif;
 }
 
 p {
@@ -64,31 +70,6 @@ h1 {
   text-decoration: underline;
 }
 
-/* ナビゲーションのレイアウト */
-#nav-pc {
-  font-size: 34px;
-}
-
-#nav-pc ul {
-  display: flex;
-  padding-left: 0;
-}
-
-#nav-pc li {
-  list-style: none;
-}
-
-/* ナビゲーションのリンクの装飾設定 */
-#nav-pc a {
-  text-decoration: none;
-  margin-left: 20px;
-  color: #0d0d0d;
-}
-
-#nav-pc a:hover {
-  text-decoration: underline;
-}
-
 .main-img {
   width: 100%;
 }
@@ -118,16 +99,17 @@ h1 {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1080px;
-  align-items: center;
 }
 
 #works-content>div {
   width: 30%;
   margin: 20px;
+  padding-bottom: 60px;
 }
 
 #works-content>div img {
   width: 100%;
+  padding-bottom: 40PX;
 }
 
 footer {
@@ -137,12 +119,12 @@ footer {
 /* 画面幅が767px以下のとき */
 @media screen and (max-width: 767px) {
   #header {
-   margin-left: 20px;
+    margin-left: 20px;
   }
 
   #about {
-    margin: 20px 0 ;
-    padding: 0 20px ;
+    margin: 20px 0;
+    padding: 0 20px;
   }
 
   #about-content {
@@ -160,8 +142,8 @@ footer {
   }
 
   #works {
-    margin: 20px 0 ;
-    padding: 0 20px ;
+    margin: 20px 0;
+    padding: 0 20px;
   }
 
   #works-content {
@@ -172,6 +154,7 @@ footer {
     width: 100%;
     margin: auto;
     text-align: center;
+    padding-bottom: 40PX;
   }
 
 }
